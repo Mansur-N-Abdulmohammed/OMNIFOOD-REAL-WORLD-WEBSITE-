@@ -228,7 +228,7 @@ header {
   justify-items: center;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: 8rem auto;
-  column-gap: 6rem;
+  column-gap: 3.6rem;
   h1 {
     color: #888;
     grid-column: 3/4;
@@ -248,19 +248,19 @@ header {
 }
 .section-logos {
   div:nth-child(2) img {
-    width: 25rem;
+    height: 3.5rem;
   }
   div:nth-child(3) img {
-    width: 10rem;
+    height: 3.5rem;
   }
   div:nth-child(4) img {
-    width: 25rem;
+    height: 3.5rem;
   }
   div:nth-child(5) img {
-    width: 10rem;
+    height: 3.5rem;
   }
   div:nth-child(6) img {
-    width: 20rem;
+    height: 3.5rem;
   }
 }
 .section-logos div img {
