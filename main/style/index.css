@@ -256,25 +256,3 @@ header {
     height: 3.2rem;
   }
 }
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  padding: 9.6rem 3.2rem;
-  background-color: #e67e22;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3.2rem;
-
-  * {
-    background-color: #333;
-    color: white;
-  }
-}
-
-.grid--center {
-  justify-content: center;
-}
