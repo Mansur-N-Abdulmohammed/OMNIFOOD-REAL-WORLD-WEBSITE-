@@ -23,7 +23,7 @@ html {
   padding: 4rem;
   gap: 9.6rem;
 
-  .left--to--right {
+  div:nth-child(even) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -40,7 +40,7 @@ html {
     }
   }
 
-  .right--to--left {
+  div:nth-child(odd) {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
