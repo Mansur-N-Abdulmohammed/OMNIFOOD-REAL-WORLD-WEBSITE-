@@ -13,7 +13,7 @@ html {
   font-size: 62.5%;
 }
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 :root {
@@ -197,7 +197,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
-  column-gap: 20rem;
+  column-gap: 5rem;
   row-gap: 4rem;
   padding: 9.6rem 3rem;
 }
@@ -215,6 +215,7 @@ header {
   grid-column: 2/3;
   grid-row: 2/3;
   transform: rotate(10deg);
+  justify-self: end;
 }
 
 .second-pattern {
@@ -225,6 +226,7 @@ header {
   grid-column: 1/2;
   grid-row: 3/4;
   transform: rotate(-10deg);
+  justify-self: start;
 }
 
 .third-pattern {
@@ -235,6 +237,7 @@ header {
   grid-column: 2/3;
   grid-row: 4/5;
   transform: rotate(10deg);
+  justify-self: end;
 }
 
 .step-text-box {
@@ -257,21 +260,28 @@ header {
 }
 
 .image {
-  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-
-  img {
-    width: 50%;
-    position: relative;
-  }
+  position: relative;
 }
-.image {
-  background: url(../media/img/cd5230f9-ed3d-4fb3-85cc-b05394a0568f.png);
+.image img {
+  width: 50%;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  --area: 55rem;
+  width: var(--area);
+  height: var(--area);
+  z-index: -1;
+  translate: -50% -50%;
+  background-image: url(../media/img/cd5230f9-ed3d-4fb3-85cc-b05394a0568f.png);
   background-position: center center;
-  background-size: 120%;
+  background-size: cover;
 }
 
 /* 
