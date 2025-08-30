@@ -243,7 +243,7 @@ header {
 .step-text-box {
   align-self: center;
   .step-number {
-    color: #7171713d;
+    color: #7171712f;
     font-size: 9.8rem;
     font-weight: 700;
   }
@@ -287,6 +287,7 @@ header {
   background-image: url(../media/img//cd5230f9-ed3d-4fb3-85cc-b05394a0568f.png);
   background-position: center center;
   background-size: cover;
+  filter: blur(0.2rem);
 }
 
 .first-image::after {
@@ -296,7 +297,7 @@ header {
   transform: rotate(80deg);
 }
 .third-image::after {
-  transform: rotate(80deg);
+  transform: rotate(120deg);
 }
 
 /* 
