@@ -345,7 +345,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
-  column-gap: 6rem;
+  column-gap: 5.7rem;
   max-width: 100rem;
 }
 .meals .meals-header {
@@ -399,7 +399,7 @@ header {
 
     li {
       h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: #222;
         font-weight: 600;
         margin-bottom: 2rem;
@@ -407,15 +407,21 @@ header {
     }
   }
 }
+.meals .card:hover {
+  transform: translatey(-3rem);
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
 .meals .card ul li svg {
   fill: #e67e22;
-  --svg-size: 3rem;
+  --svg-size: 2.5rem;
   width: var(--svg-size);
   height: var(--svg-size);
 }
 .meals .card span {
-  color: black;
-  font-size: 1.5rem;
+  color: #222;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 2rem;
@@ -429,9 +435,11 @@ header {
   background-color: rgb(0, 255, 0);
   margin-right: 0.5rem;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 .meals .card .s-span {
   background-color: #d6cb00;
+  font-weight: 600;
   font-size: 1.2rem;
 }
 /* 
