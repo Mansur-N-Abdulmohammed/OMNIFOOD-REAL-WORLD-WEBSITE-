@@ -182,10 +182,10 @@ header {
   }
 }
 .logos {
-  margin-top: 5rem;
+  margin: 5rem auto 9.6rem auto;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -194,11 +194,10 @@ header {
 }
 .logos h1 {
   grid-column: 3/4;
-  color: rgba(110, 110, 110, 0.597);
-  font-weight: 500;
+  color: #999;
+  font-weight: 700;
   text-transform: uppercase;
-  margin: 2.2rem 0;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   letter-spacing: 1px;
 }
 .logos a:link,
@@ -207,13 +206,11 @@ header {
   border-radius: 1rem;
   padding: 1rem;
 }
-.logos a:hover,
-.logosa:active {
-  background-color: #55555523;
-  transition: all 0.2s ease;
-}
+
 .logos a img {
   max-height: 3.5rem;
+  filter: brightness(0);
+  opacity: 0.5;
 }
 
 .Z-pattern .header {
@@ -237,7 +234,6 @@ header {
   column-gap: 5rem;
   row-gap: 8rem;
   padding: 4rem;
-  margin-top: 12rem;
 }
 .Z-pattern .header {
   grid-column: 1/3;
@@ -338,6 +334,106 @@ header {
   transform: rotate(120deg);
 }
 
+/*
+ ---------------------- 
+ ---MEALS--SECTION-----
+ ----------------------
+ */
+
+.meals {
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: 6rem;
+  max-width: 100rem;
+}
+.meals .meals-header {
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 9.6rem;
+  h2 {
+    color: #e67e22;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  h1 {
+    color: #222;
+    font-size: 3.8rem;
+  }
+}
+.meals .first-card {
+  grid-column: 1/2;
+}
+.meals .second-card {
+  grid-column: 2/3;
+}
+.meals .diet-list {
+  grid-column: 3/4;
+}
+.meals a {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.meals .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 1rem;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  ul {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    li {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      h1 {
+        font-size: 2.2rem;
+        color: #222;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+.meals .card ul li svg {
+  fill: #e67e22;
+  --svg-size: 3rem;
+  width: var(--svg-size);
+  height: var(--svg-size);
+}
+.meals .card span {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  padding: 0.3rem 0.5rem;
+  display: inline-block;
+  span {
+    font-weight: 600;
+  }
+}
+.meals .card .f-span {
+  background-color: rgb(0, 255, 0);
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.meals .card .s-span {
+  background-color: #d6cb00;
+  font-size: 1.2rem;
+}
 /* 
 --- 01 TYPOGRAPHY SYSTEM 
 
