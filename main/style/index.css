@@ -119,6 +119,9 @@ header {
   a {
     display: inline-block;
   }
+  .btns {
+    display: flex;
+  }
   .primary-btn {
     margin-right: 1.6rem;
   }
@@ -142,6 +145,13 @@ header {
   .secondary-btn:visited {
     background-color: white;
     color: #555;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    ion-icon {
+      height: 1.7rem;
+    }
   }
   .secondary-btn:hover,
   .secondary-btn:active {
@@ -376,12 +386,15 @@ header {
 }
 
 .meals .card {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: start;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0px 10px 40px 15px #9c9c9c3c;
+  box-shadow: 0px 10px 40px 10px #9c9c9c3c;
+  transition: all 0.2s linear;
+  z-index: 99;
   cursor: pointer;
   img {
     width: 100%;
@@ -408,12 +421,11 @@ header {
   }
 }
 .meals .card:hover {
-  transform: scale(1.02);
-  transition: all 0.3s linear;
+  transform: translateY(-2rem);
 }
 
 .meals .card ul li ion-icon {
-  color: #e67e22;
+  color: #eea564;
   --svg-size: 2.5rem;
   width: var(--svg-size);
   height: var(--svg-size);
@@ -466,13 +478,13 @@ header {
   --check: 3rem;
   width: var(--check);
   height: var(--check);
-  color: #e67e22;
+  color: #eea564;
 }
 .meals .recipes:link,
 .meals .recipes,
 :visited {
   margin-top: 4.4rem;
-  margin-left: 2rem;
+  margin-left: 4rem;
   font-size: 1.9rem;
   font-weight: 400;
   display: flex;
@@ -486,25 +498,26 @@ header {
   ion-icon {
     fill: #cf711f;
     width: 34px;
+    transition: all 0.2s linear;
   }
 }
 .meals .recipes:hover,
 .meals .recipes:active {
   ion-icon {
-    transform: translateX(1rem);
-    transition: all 0.2s linear;
+    transform: translateX(0.7rem);
   }
 }
 
 .b-img {
-  max-width: 200rem;
+  max-width: 250rem;
   margin: 10rem auto 20rem auto;
   position: relative;
   height: 120rem;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
   background: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.756),
+      rgba(0, 0, 0, 0.689),
+      rgba(0, 0, 0, 0.627),
       rgba(255, 255, 255, 0)
     ),
     url(../media/img/meals/pexels-narda-yescas-724842-1566837.jpg);
@@ -513,23 +526,107 @@ header {
 }
 .b-img .texts {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 2%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 .b-img .texts h1 {
-  font-size: 7.4rem;
+  font-size: 4.4rem;
+  line-height: 1;
   text-transform: capitalize;
 }
 .b-img .texts p {
   font-size: 1.6rem;
   max-width: 90rem;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+.testimonial-section {
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fdf2e9;
+  padding: 2rem;
+  column-gap: 5rem;
 }
 
+.testimonial-section .testimonial {
+  align-self: center;
+  justify-self: ;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5rem;
+}
+.testimonial-section .testimonial .figures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 3rem;
+  column-gap: 5rem;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    img {
+      border-radius: 50%;
+      width: 7rem;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #222;
+    }
+    span {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+    }
+  }
+}
+.testimonial-section .testimonial .header {
+  h2 {
+    color: #e67e22;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  h1 {
+    color: #222;
+    font-size: 3.8rem;
+  }
+}
+.testimonial-section .testimonial-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: stretch;
+  justify-items: stretch;
+  gap: 1vh;
+
+  .image-2 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    img {
+      width: 100%;
+      transition: all 0.2s linear;
+      cursor: pointer;
+    }
+  }
+  .image-2:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
 /* 
 --- 01 TYPOGRAPHY SYSTEM 
 
