@@ -330,7 +330,6 @@ header {
   background-image: url(../media/img//cd5230f9-ed3d-4fb3-85cc-b05394a0568f.png);
   background-position: center center;
   background-size: cover;
-  filter: blur(0.18rem);
 }
 
 .first-image::after {
@@ -546,7 +545,7 @@ header {
 .testimonial-section {
   margin: 10rem auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 55fr 45fr;
   background-color: #fdf2e9;
   padding: 2rem;
   column-gap: 5rem;
@@ -554,7 +553,6 @@ header {
 
 .testimonial-section .testimonial {
   align-self: center;
-  justify-self: ;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -617,6 +615,7 @@ header {
     border-radius: 2vh;
     img {
       width: 100%;
+
       transition: all 0.2s linear;
       cursor: pointer;
     }
