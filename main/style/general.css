@@ -5,8 +5,39 @@
 }
 
 b {
-  font-weight: 600;
+  font-weight: 500;
 }
 text-center {
   text-align: center;
 }
+
+/* 
+--- 01 TYPOGRAPHY SYSTEM 
+
+ -FONTSIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Line Height :
+
+default:1
+
+- Font Weight :
+DEFAULT :400
+
+
+ --- 02 COLORS
+
+--- 03 SHADOWS
+
+--- 04 BORDER_RADIUS
+
+--- 05 WHITESPACE 
+
+--- 06 SPACING SYSTEM (px):
+ / 2 / 4 / 2 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+ any thing that you dont want to change dont set by rem set by px only
+ 
+
+*/

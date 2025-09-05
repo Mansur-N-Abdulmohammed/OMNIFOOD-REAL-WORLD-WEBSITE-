@@ -510,7 +510,7 @@ header {
 
 .b-img {
   max-width: 250rem;
-  margin: 10rem auto 20rem auto;
+  margin: 10rem auto 10rem auto;
   position: relative;
   height: 120rem;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
@@ -544,11 +544,11 @@ header {
   line-height: 1.6;
 }
 .testimonial-section {
-  margin: 10rem auto;
+  margin: 7rem auto;
   display: grid;
   grid-template-columns: 60fr 40fr;
   background-color: #fdf2e9;
-  padding: 1rem;
+  padding: 0.3%;
   column-gap: 5rem;
 }
 
@@ -625,33 +625,272 @@ header {
     }
   }
 }
+
+.pricing-section {
+  display: grid;
+  max-width: 120rem;
+  margin: 20rem auto;
+  padding: 4rem 2.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6rem;
+  grid-template-rows: auto 1fr auto auto;
+  row-gap: 9.6rem;
+}
+
+.header-3,
+.discription,
+.main-sub-discription {
+  grid-column: 1/-1;
+}
+.card-2 {
+  overflow: hidden;
+  max-width: 40rem;
+  list-style: none;
+  padding: 5rem;
+  box-shadow: inset 0px 0px 0px 2px #fdf2e9;
+  border-radius: 1rem;
+
+  .card-sub-header {
+    color: #e67e22;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3.6rem;
+    font-weight: 600;
+  }
+  .price {
+    display: block;
+    color: #222;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    b {
+      font-size: 6.2rem;
+      font-weight: 650;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 5rem 0 3rem 0;
+    list-style: none;
+    li {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      font-weight: 400;
+      ion-icon {
+        color: #e67e22;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #555;
+    font-weight: 400;
+  }
+}
+.card-2 .btn-section {
+  text-align: center;
+  .btn {
+    display: inline-block;
+    font-family: "rubik", sans-serif;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 1.8rem 3rem;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+  .btn:hover {
+    background-color: #cf711f;
+  }
+}
+.f-card-2 {
+  grid-column: 1/2;
+  justify-self: end;
+}
+.s-card-2 {
+  grid-column: 2/3;
+  justify-self: start;
+  background-color: #fdf2e9;
+  position: relative;
+}
+.s-card-2::after {
+  content: "best value";
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+
+  background-color: #ffd43b;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  padding: 0.8rem 5rem;
+  transform: rotate(45deg);
+  translate: 50% -50%;
+}
+
+.pricing-section .header-3 {
+  grid-column: 1/-1;
+  h2 {
+    color: #e67e22;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  h1 {
+    color: #222;
+    font-size: 4.4rem;
+  }
+}
+
+.pricing-section .discription {
+  text-align: center;
+  margin-top: -5rem;
+  font-size: 1.6rem;
+  color: #555555ed;
+  font-weight: 400;
+}
+
+.main-sub-discription {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 3rem;
+  gap: 6rem;
+}
+.main-sub-discription li {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  h1 {
+    color: #222;
+    font-size: 2.4rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+  ion-icon {
+    background-color: #fdf2e9;
+    --ion-size: 30px;
+    color: #e67e22;
+    padding: 15px;
+    border-radius: 50%;
+
+    width: var(--ion-size);
+    height: var(--ion-size);
+  }
+}
 /* 
---- 01 TYPOGRAPHY SYSTEM 
+.pricing-section {
+  max-width: 120rem;
+  margin: 9.6rem auto;
+  background-color: #55555544;
 
- -FONTSIZE SYSTEM (px):
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Line Height :
-
-default:1
-
-- Font Weight :
-DEFAULT :400
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto auto;
+}
 
 
- --- 02 COLORS
+.pricing-section .pricing {
+  grid-column:;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.f-card {
+  justify-self: end;
+}
+.s-card {
+  justify-self: start;
+}
+.pricing-section .pricing .card {
+  background-color: white;
+  color: #222222e0;
+  list-style-type: none;
+}
 
---- 03 SHADOWS
-
---- 04 BORDER_RADIUS
-
---- 05 WHITESPACE 
-
---- 06 SPACING SYSTEM (px):
- / 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-
- any thing that you dont want to change dont set by rem set by px only
- 
-
-*/
+.pricing-section .pricing .card {
+  li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3) {
+    text-align: center;
+    background-color: pink;
+  }
+}
+.pricing-section .pricing .card {
+  li:nth-child(1) {
+    font-size: 1.6rem;
+    color: #e67e22;
+    text-transform: uppercase;
+  }
+  li:nth-child(2) {
+    font-size: 3.2rem;
+    b {
+      font-size: 6.2rem;
+    }
+  }
+  li:nth-child(3) {
+    color: #777;
+    font-size: 1rem;
+  }
+  li:nth-child(4),
+  li:nth-child(5),
+  li:nth-child(6),
+  li:nth-child(7) {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.4rem;
+    color: #333333;
+    font-weight: 400;
+    ion-icon {
+      color: #e67e22;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  li:nth-child(8) {
+    text-align: center;
+    .btn {
+      display: inline-block;
+      font-family: "rubik", sans-serif;
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      border-radius: 9px;
+      padding: 1.2rem 2.5rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    .btn:hover {
+      background-color: #cf711f;
+      color: white;
+      transition: all 0.2s linear;
+    }
+  }
+}
+.pricing-section .discription {
+  text-align: center;
+} */
