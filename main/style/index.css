@@ -200,11 +200,11 @@ header {
   align-content: center;
   align-items: center;
   justify-items: center;
-  column-gap: 2rem;
+  column-gap: 2.4rem;
 }
 .logos h1 {
   grid-column: 3/4;
-  color: #9999999e;
+  color: #999999cd;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.7rem;
@@ -220,7 +220,7 @@ header {
 .logos a img {
   max-height: 3.5rem;
   filter: brightness(0);
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .Z-pattern .header {
@@ -350,12 +350,13 @@ header {
  */
 
 .meals {
-  margin: 10rem auto;
+  margin: 8rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
   column-gap: 5.7rem;
   max-width: 100rem;
+  padding: 5rem 0;
 }
 .meals .meals-header {
   grid-column: 1/-1;
@@ -541,7 +542,8 @@ header {
 .b-img .texts p {
   font-size: 1.6rem;
   max-width: 90rem;
-  line-height: 1.6;
+  line-height: 2;
+  font-weight: 400;
 }
 .testimonial-section {
   margin: 7rem auto;
@@ -629,7 +631,7 @@ header {
 .pricing-section {
   display: grid;
   max-width: 120rem;
-  margin: 20rem auto;
+  margin: 5rem auto;
   padding: 4rem 2.4rem;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 6rem;
@@ -798,6 +800,27 @@ header {
     height: var(--ion-size);
   }
 }
+
+/* ---------------------- */
+/* --FREE-TRIAL-SECTION-- */
+/* ---------------------- */
+.free-trial {
+  margin: 3.6rem auto;
+  background-color: #94d82d;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.free-trial .image-2 {
+  background: url(../media/img/gallery/gallery-6.jpg);
+  background-color: #222;
+  background-size: cover;
+  width: 100%;
+}
+
+.free-trial {
+}
+
 /* 
 .pricing-section {
   max-width: 120rem;
