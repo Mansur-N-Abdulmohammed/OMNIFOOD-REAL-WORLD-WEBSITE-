@@ -818,7 +818,8 @@ header {
   overflow: hidden;
 }
 .free-trial .image-2 {
-  background-image: linear-gradient(#ffa6595f), url(../media/img/eating.jpg);
+  background-image: linear-gradient(#00000017),
+    url(../media/img/pexels-chevanon-323682.jpg);
   background-size: cover;
   background-position: center center;
 }
