@@ -39,7 +39,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 3.2rem;
   padding: 0rem 5rem;
   background-color: #fdf2e9;
   .space {
@@ -548,17 +548,16 @@ header {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  width: 60%;
+  gap: 2rem;
+  width: 80%;
 }
 .b-img .texts h1 {
   font-size: 4vh;
-  line-height: 1;
+  line-height: 1.4;
   text-transform: capitalize;
 }
 .b-img .texts p {
   font-size: 1.7vh;
-  max-width: 90rem;
   line-height: 2;
   font-weight: 400;
 }
@@ -804,6 +803,7 @@ header {
   h1 {
     color: #222;
     font-size: 2.4rem;
+    font-weight: 600;
     margin-bottom: 1.6rem;
   }
   p {
@@ -817,7 +817,7 @@ header {
     color: #e67e22;
     padding: 15px;
     border-radius: 50%;
-    margin-bottom: 3.2rem;
+    margin-bottom: 3.6rem;
     width: var(--ion-size);
     height: var(--ion-size);
   }
@@ -828,9 +828,9 @@ header {
 /* ---------------------- */
 
 .free-trial {
-  margin: 10rem auto;
+  margin: 10rem auto 0 auto;
   background-image: linear-gradient(#eea564, #e67e22);
-  max-width: 110rem;
+  max-width: 100rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
   border-radius: 1.6rem;
@@ -839,7 +839,10 @@ header {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 15%);
 }
 .free-trial .image-2 {
-  background-image: linear-gradient(#eea46437),
+  background-image: linear-gradient(
+      rgba(238, 164, 99, 0.1),
+      rgba(230, 125, 34, 10%)
+    ),
     url(../media/img/gallery/gallery-10.jpg);
   background-size: cover;
   background-position: center center;
@@ -876,8 +879,8 @@ header {
     width: 100%;
     text-decoration: none;
     font-weight: 700;
-    padding: 1.2rem;
-    font-size: 2rem;
+    padding: 1.3rem;
+    font-size: 1.8rem;
     transition: all 0.2s linear;
   }
   a:hover,
@@ -908,11 +911,11 @@ header {
     background-color: #f5cba7;
   }
   li input:focus {
-    box-shadow: 0 0 0 0.8rem #f5cba7;
+    box-shadow: 0 0 0 0.6rem #f5cba7;
     background-color: #fdf2e9;
   }
   li select:focus {
-    box-shadow: 0 0 0 0.8rem #f5cba7;
+    box-shadow: 0 0 0 0.6rem #f5cba7;
     background-color: #fdf2e9;
     transition: all 0s linear;
   }
@@ -921,16 +924,16 @@ header {
 .free-trial .form-section .header-4 {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 0rem;
   color: #2e1907e1;
   h1 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     font-weight: 750;
     line-height: 1.6;
     letter-spacing: 1px;
   }
   p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2;
   }
 }
@@ -938,100 +941,71 @@ header {
   padding: 3rem 0;
   margin: 0 auto 5rem auto;
 }
-
-/* 
-.pricing-section {
-  max-width: 120rem;
-  margin: 9.6rem auto;
-  background-color: #55555544;
-  
+.container-3 {
+  padding: 9.6rem 0;
+}
+.foot-916 {
+  margin: 0 auto;
+  max-width: 110rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto 1fr auto auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4.6rem;
 }
 
-
-.pricing-section .pricing {
-  grid-column:;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-}
-.f-card {
-  justify-self: end;
-}
-.s-card {
-  justify-self: start;
-}
-.pricing-section .pricing .card {
-  background-color: white;
-  color: #222222e0;
-  list-style-type: none;
-}
-
-.pricing-section .pricing .card {
-  li:nth-child(1),
-  li:nth-child(2),
-  li:nth-child(3) {
-    text-align: center;
-    background-color: pink;
-  }
-}
-.pricing-section .pricing .card {
-  li:nth-child(1) {
-    font-size: 1.6rem;
-    color: #e67e22;
-    text-transform: uppercase;
-  }
-  li:nth-child(2) {
-    font-size: 3.2rem;
-    b {
-      font-size: 6.2rem;
-    }
-  }
-  li:nth-child(3) {
-    color: #777;
-    font-size: 1rem;
-  }
-  li:nth-child(4),
-  li:nth-child(5),
-  li:nth-child(6),
-  li:nth-child(7) {
+.foot-916 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  .socials {
     display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 1.4rem;
-    color: #333333;
-    font-weight: 400;
-    ion-icon {
-      color: #e67e22;
-      width: 20px;
-      height: 20px;
-    }
+    gap: 2rem;
   }
-  li:nth-child(8) {
-    text-align: center;
-    .btn {
-      display: inline-block;
-      font-family: "rubik", sans-serif;
-      background-color: #e67e22;
-      color: white;
-      border: none;
-      border-radius: 9px;
-      padding: 1.2rem 2.5rem;
-      font-weight: 500;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
-    .btn:hover {
-      background-color: #cf711f;
-      color: white;
-      transition: all 0.2s linear;
-    }
+  li a {
+    display: block;
   }
 }
-.pricing-section .discription {
-  text-align: center;
-} */
+.anchor-12:link,
+.anchor-12:visited {
+  text-decoration: none;
+  color: black;
+}
+.A789 {
+  width: 30px;
+  height: 30px;
+  fill: black !important;
+}
+
+.A51,
+.A51:link,
+.A51:visited {
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  color: #555555b2;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.F-22:link,
+.F-22:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555555b2;
+  img {
+    width: 15rem;
+  }
+}
+
+.header-12 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000000da;
+}
+.my-info {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+}
+.copy-right {
+  display: block;
+  font-size: 1.4rem;
+}
