@@ -150,8 +150,10 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
-    ion-icon {
-      height: 1.7rem;
+    gap: 1rem;
+    .btn-ion {
+      height: 2rem;
+      fill: #555;
     }
   }
   .secondary-btn:hover,
@@ -805,28 +807,109 @@ header {
 /* --FREE-TRIAL-SECTION-- */
 /* ---------------------- */
 .free-trial {
-  margin: 3.6rem auto;
-  background-color: #94d82d;
-  max-width: 120rem;
+  margin: 10rem auto 50rem auto;
+  background-image: linear-gradient(140deg, #ffa659, #e67e22);
+  max-width: 100rem;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 60fr 30fr;
+  grid-template-rows: 1fr;
+  border-radius: 1.6rem;
+  color: #2e1907;
+  overflow: hidden;
 }
 .free-trial .image-2 {
-  background: url(../media/img/gallery/gallery-6.jpg);
-  background-color: #222;
+  background-image: linear-gradient(#ffa6595f), url(../media/img/eating.jpg);
   background-size: cover;
-  width: 100%;
+  background-position: center center;
 }
 
-.free-trial {
+.free-trial .form-section .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.4rem;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  a:link,
+  a:visited {
+    background-color: #45260a;
+    color: #fdf2e9;
+    border-radius: 1rem;
+    align-self: end;
+    justify-self: stretch;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1.2rem;
+    font-size: 2rem;
+    transition: all 0.2s linear;
+  }
+  a:hover,
+  a:active {
+    background-color: white;
+    color: #222;
+  }
+
+  li span {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  li input,
+  li select {
+    background-color: #fdf2e9;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1.6rem;
+    transition: all 0.2s linear;
+  }
+  li input:hover,
+  li select:hover {
+    background-color: #f5cba7;
+  }
+  li input:focus {
+    box-shadow: 0 0 0 0.8rem #f5cba7;
+    background-color: #fdf2e9;
+  }
+  li select:focus {
+    box-shadow: 0 0 0 0.8rem #f5cba7;
+    background-color: #fdf2e9;
+    transition: all 0s linear;
+  }
 }
 
+.free-trial .form-section {
+  padding: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+
+    line-height: 1.6;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+}
 /* 
 .pricing-section {
   max-width: 120rem;
   margin: 9.6rem auto;
   background-color: #55555544;
-
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr auto auto;
