@@ -822,6 +822,12 @@ header {
   background-size: cover;
   background-position: center center;
 }
+.form-section {
+  padding: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
 
 .free-trial .form-section .form {
   display: grid;
@@ -861,7 +867,7 @@ header {
   li span {
     text-transform: capitalize;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
   }
   li input,
   li select {
@@ -869,8 +875,10 @@ header {
     border: none;
     padding: 1rem;
     border-radius: 1rem;
-    color: black;
+    color: #000000d3;
     font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
     transition: all 0.2s linear;
   }
   li input:hover,
@@ -888,19 +896,19 @@ header {
   }
 }
 
-.free-trial .form-section {
-  padding: 4.8rem;
+.free-trial .form-section .header-4 {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2.4rem;
+  color: #2e1907e1;
   h1 {
     font-size: 3.6rem;
-    font-weight: 800;
-
+    font-weight: 750;
     line-height: 1.6;
+    letter-spacing: 1px;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2;
   }
 }
