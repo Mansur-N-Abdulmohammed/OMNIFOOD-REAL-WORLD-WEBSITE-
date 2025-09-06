@@ -323,7 +323,7 @@ header {
   position: absolute;
   left: 50%;
   top: 50%;
-  --area: 110%;
+  --area: 100%;
   width: var(--area);
   padding-bottom: var(--area);
   z-index: -2;
@@ -336,7 +336,7 @@ header {
   position: absolute;
   left: 50%;
   top: 50%;
-  --area: 80%;
+  --area: 70%;
   width: var(--area);
   padding-bottom: var(--area);
   z-index: -1;
@@ -670,7 +670,7 @@ header {
     margin-bottom: 2rem;
     b {
       font-size: 6.2rem;
-      font-weight: 650;
+      font-weight: 750;
     }
   }
 
@@ -810,7 +810,7 @@ header {
   background-image: linear-gradient(140deg, #ffa659, #e67e22);
   max-width: 100rem;
   display: grid;
-  grid-template-columns: 60fr 30fr;
+  grid-template-columns: 55fr 30fr;
   grid-template-rows: 1fr;
   border-radius: 1.6rem;
   color: #2e1907;
@@ -914,9 +914,7 @@ header {
 }
 .container-2 {
   padding: 3rem 0;
-  width: 120rem;
-  margin: 0 auto;
-  height: 100%;
+  margin: 0 auto 5rem auto;
 }
 
 /* 
