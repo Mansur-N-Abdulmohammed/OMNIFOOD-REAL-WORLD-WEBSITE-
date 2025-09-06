@@ -207,7 +207,7 @@ header {
 }
 .logos h1 {
   grid-column: 3/4;
-  color: #999999cd;
+  color: #999999a1;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.7rem;
@@ -261,8 +261,7 @@ header {
 .first-image {
   grid-column: 2/3;
   grid-row: 2/3;
-  transform: rotate(7deg);
-  justify-self: end;
+  justify-self: center;
 }
 
 .second-pattern {
@@ -272,8 +271,7 @@ header {
 .second-image {
   grid-column: 1/2;
   grid-row: 3/4;
-  transform: rotate(-7deg);
-  justify-self: start;
+  justify-self: center;
 }
 
 .third-pattern {
@@ -283,8 +281,7 @@ header {
 .third-image {
   grid-column: 2/3;
   grid-row: 4/5;
-  transform: rotate(7deg);
-  justify-self: end;
+  justify-self: center;
 }
 
 .step-text-box {
@@ -326,24 +323,26 @@ header {
   position: absolute;
   left: 50%;
   top: 50%;
-  --area: 150%;
+  --area: 110%;
+  width: var(--area);
+  padding-bottom: var(--area);
+  z-index: -2;
+  translate: -50% -50%;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+}
+.image::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  --area: 80%;
   width: var(--area);
   padding-bottom: var(--area);
   z-index: -1;
   translate: -50% -50%;
-  background-image: url(../media/img//cd5230f9-ed3d-4fb3-85cc-b05394a0568f.png);
-  background-position: center center;
-  background-size: cover;
-}
-
-.first-image::after {
-  transform: rotate(-10deg);
-}
-.second-image::after {
-  transform: rotate(80deg);
-}
-.third-image::after {
-  transform: rotate(120deg);
+  background-color: #fae5d3;
+  border-radius: 50%;
 }
 
 /*
