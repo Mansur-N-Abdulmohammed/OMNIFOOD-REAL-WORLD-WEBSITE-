@@ -868,10 +868,9 @@ header {
   li select {
     background-color: #fdf2e9;
     border: none;
-    outline: none;
     padding: 1.3rem 2rem;
     border-radius: 1rem;
-    color: #000000;
+    color: inherit;
     font-size: 1.6rem;
     font-weight: 500;
     transition: all 0.2s linear;

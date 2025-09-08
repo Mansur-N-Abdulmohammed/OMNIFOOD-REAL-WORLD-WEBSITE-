@@ -20,6 +20,11 @@ text-center {
   font-family: "rubik", sans-serif, sans-serif;
   list-style: none;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 1px 5px #fdf2e9;
+}
+
 * button,
 * a {
   cursor: pointer;
