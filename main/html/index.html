@@ -234,7 +234,7 @@
 
   <section class="b-img" id="A56">
     <div class="texts">
-      <h1>5% discount for our customer's
+      <h1>discount for our customer's
         in the nothern ireland and schotland in the uk
       </h1>
       <p>we are give a lot of opportunite for our customer in the nothern ireland and schotland with the discounts from
@@ -378,22 +378,23 @@
             anytime. And the first meal is on us!</p>
         </div>
 
-        <ul class="form">
-          <li><span>full name</span><input type="text" placeholder="John Smith"></li>
-          <li><span>email address</span><input type="Email" placeholder="me@example.com"></li>
-          <li><span>where did you hear froom us ?</span>
-            <select name="" id="">
+        <form class="form" action="#" method="get">
+          <li><span><label for="H1">full name</label></span><input type="text" placeholder="John Smith" required
+              name="UserName" id="H1"></li>
+          <li><span><label for="H2">email address</label></span><input type="Email" placeholder="me@example.com"
+              required name="UserEmail" id="H2"></li>
+          <li><span><label for="H3">where did you hear froom us ?</label></span>
+            <select name="Selection" id="H3">
               <option value="">please choose one option </option>
-              <option value="">friends and family</option>
-              <option value="">Youtube video</option>
-              <option value="">Podcast</option>
-              <option value="">Facebook ad</option>
-              <option value="">Others</option>
+              <option value="friends-and-family">friends and family</option>
+              <option value="Youtube-video">Youtube video</option>
+              <option value="Podcast">Podcast</option>
+              <option value="Facebook-ad">Facebook ad</option>
+              <option value="Others">Others</option>
             </select>
           </li>
-          <a href="#">Sign up now</a>
-
-        </ul>
+          <button class="new-controling">Sign in now </button>
+        </form>
       </div>
       <div class="image-2" role="img" aria-label="preparing food">
 
