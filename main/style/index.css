@@ -71,13 +71,14 @@ header {
   grid-row: 2/3;
   max-width: var(--container-width);
   background-color: #fdf2e9;
-  padding: 0rem 3.2rem;
+  padding: 0rem 5.4rem;
   margin: 10rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 9.6rem;
 }
+
 .hero-img {
   width: 100%;
 }
@@ -85,7 +86,7 @@ header {
   color: var(--greydarker);
   font-family: "rubik", sans-serif;
   h1 {
-    font-size: 5.2rem;
+    font-size: 5rem;
     line-height: 1.05;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -162,7 +163,7 @@ header {
       margin-right: 0;
     }
     p {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       color: #333;
       margin: 0;
       font-weight: 600;
@@ -968,6 +969,7 @@ header {
   font-size: 1.4rem;
   font-weight: 400;
   color: #555555b2;
+  display: inline-block;
   transition: all 0.2s linear;
   img {
     width: 15rem;

@@ -1,11 +1,108 @@
-@media only screen and (max-width: 767px) {
-  body {
-    background-color: rgb(0, 192, 166);
+/* you cant use rem or em in the queries , cause the 1rew = 1em = 16px , its size wont depend on the html font-size  */
+
+@media (max-width: 1260px) {
+  header {
+    a:link,
+    a:visited {
+      font-size: 1.4rem;
+    }
+
+    .btn-nav:link,
+    .btn-nav:visited {
+      font-size: 1.4rem;
+    }
+  }
+
+  .text-hero {
+    h1 {
+      font-size: 4.5rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+    .btn:link,
+    .btn:visited {
+      font-size: 1.6rem;
+    }
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .hero-img-box {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-hero .portfolio .momo {
+    height: 4rem;
+  }
+  .section-hero .portfolio {
+    p {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+  .logos {
+    row-gap: 1rem;
+  }
+  .logos h1 {
+    font-size: 1.4rem;
+  }
+  .logos a img {
+    max-height: 2.7rem;
+    filter: brightness(0);
+    opacity: 0.4;
+  }
+  .Z-pattern {
+    max-width: 100rem;
+    row-gap: 4rem;
+    .header {
+      h1 {
+        font-size: 3.6rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+    .image {
+      width: 70%;
+    }
+    .image img {
+      width: 40%;
+      z-index: 99;
+    }
+  }
+  .step-text-box {
+    .step-number {
+      font-size: 7.4rem;
+    }
+    .step-header {
+      font-size: 2rem;
+    }
+    .step-text {
+      font-size: 1.4rem;
+    }
+  }
+
+  .testimonial-section {
+    grid-template-columns: 70fr 30fr;
+  }
+  .testimonial-section .testimonial-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(4, 1fr);  */
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background-color: rgb(137, 0, 69);
-  }
-}
+/* 
+
+ -FONTSIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 06 SPACING SYSTEM (px):
+ / 2 / 4 / 2 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
