@@ -71,7 +71,7 @@ header {
   grid-row: 2/3;
   max-width: var(--container-width);
   background-color: #fdf2e9;
-  padding: 0rem 5.4rem;
+  padding: 0rem 5rem;
   margin: 10rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
