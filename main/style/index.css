@@ -16,6 +16,7 @@ header {
   gap: 3.2rem;
   padding: 0rem 5rem;
   background-color: #fdf2e9;
+
   .space {
     margin-left: auto;
   }
@@ -49,6 +50,9 @@ header {
     background-color: #cf711f;
     color: white;
     transition: all 0.2s linear;
+  }
+  .hidden {
+    display: none;
   }
 }
 
@@ -206,7 +210,7 @@ header {
 }
 
 .logos a img {
-  max-height: 3.5rem;
+  height: 3.5rem;
   filter: brightness(0);
   opacity: 0.4;
 }
@@ -233,7 +237,8 @@ header {
   grid-template-rows: auto repeat(3, 1fr);
   column-gap: 5rem;
   row-gap: 8rem;
-  padding: 4rem;
+  max-width: 120rem;
+  padding: 4rem 2.4rem;
 }
 .Z-pattern .header {
   grid-column: 1/3;
@@ -299,6 +304,7 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 70%;
 }
 .image img {
   width: 50%;
@@ -525,12 +531,12 @@ header {
   width: 80%;
 }
 .b-img .texts h1 {
-  font-size: 4vh;
+  font-size: 4.4rem;
   line-height: 1.4;
   text-transform: capitalize;
 }
 .b-img .texts p {
-  font-size: 1.7vh;
+  font-size: 1.6vh;
   line-height: 2;
   font-weight: 400;
 }
@@ -1006,3 +1012,15 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   background-color: red;
 } */
+
+/* 
+
+ -FONTSIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 06 SPACING SYSTEM (px):
+ / 2 / 4 / 2 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/

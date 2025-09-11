@@ -1,23 +1,111 @@
 /* you cant use rem or em in the queries , cause the 1rew = 1em = 16px , its size wont depend on the html font-size  */
 
-@media (max-width: 1260px) {
-  html {
-    /* font-size: 8px;*/
-    font-size: 50%;
+/* Phones (portrait & small devices) */
+@media (max-width: 30em) {
+  .omnifood-logo {
+    height: 3rem;
+  }
+  .hidden {
+    display: inline-block !important;
+  }
+  .hero {
+    background-color: pink;
+    grid-template-columns: repeat(1, 1fr);
+
+    .text-hero {
+      text-align: center;
+      padding: 2.4rem 3rem;
+    }
+    .btns,
+    .portfolio {
+      justify-content: center;
+    }
+    .hero-img-box {
+      width: 70%;
+      justify-self: center;
+    }
+  }
+  .logos a img {
+    height: 2.4rem;
+  }
+  header .hide {
+    display: none !important;
+  }
+  .Z-pattern {
+    column-gap: 0;
   }
   .Z-pattern .image {
-    width: 70%;
+    width: 60%;
   }
-  .testimonial-section .testimonial-gallery {
-    /* grid-template-columns: repeat(2, 1fr); */
+  html {
+    font-size: 31.25%;
   }
 }
 
-@media (max-width: 1000px) {
+/* Tablets (portrait) */
+@media (min-width: 30.0625em) and (max-width: 48em) {
+  .omnifood-logo {
+    height: 2.8rem;
+  }
+  .hero {
+    background-color: #d9ff00;
+    grid-template-columns: repeat(1, 1fr);
+
+    .text-hero {
+      text-align: center;
+      padding: 2.4rem 8rem;
+    }
+    .btns,
+    .portfolio {
+      justify-content: center;
+    }
+    .hero-img-box {
+      width: 60%;
+      justify-self: center;
+    }
+  }
+  .logos a img {
+    height: 2.4rem;
+  }
+
   html {
-    font-size: 43.75%;
+    font-size: 37.5%;
   }
 }
+
+/* Tablets (landscape) */
+@media (min-width: 48.0625em) and (max-width: 64em) {
+  .hero {
+    background-color: #00ff08;
+  }
+  html {
+    font-size: 37%;
+  }
+}
+
+/* Laptops (standard desktops) */
+@media (min-width: 64.0625em) and (max-width: 85.375em) {
+  .hero {
+    background-color: #6a00ff;
+  }
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Bigger Laptops (large desktops, 1080p screens) */
+@media (min-width: 85.4375em) and (max-width: 90em) {
+  .hero {
+    background-color: #ff0088;
+  }
+}
+/* Monitors / Extra Large Screens (2K, 4K, ultrawide) */
+@media (min-width: 90.0625em) {
+  .hero {
+    background-color: #00fff7;
+  }
+}
+
 /* 
 
  -FONTSIZE SYSTEM (px):
