@@ -58,13 +58,30 @@ header {
 .hidden {
   width: 8rem;
   height: 8rem;
-  border: 0.5rem solid #333;
+  border: 0.5rem solid #cf711f;
   border-radius: 2rem;
-  background-color: white;
-  transition: all 0.2s ease-in-out;
+  background-color: #333;
+  z-index: 99;
+  .menu-item {
+    width: 100%;
+    height: 100%;
+    color: #cf711f;
+  }
+  .menu-close {
+    display: none;
+  }
 }
 .hidden:hover {
-  background-color: grey;
+  background-color: #555;
+  transition: all 0.3s ease-in-out;
+}
+.hidden:focus {
+  .menu-close {
+    display: block;
+  }
+  .menu-open {
+    display: none;
+  }
 }
 
 .omnifood-logo {
@@ -151,6 +168,7 @@ header {
     .btn-ion {
       height: 2rem;
       fill: #555;
+      z-index: -1;
     }
   }
   .secondary-btn:hover,
@@ -189,6 +207,63 @@ header {
       }
     }
   }
+}
+
+.menu-section {
+  height: 100vh;
+  width: 50vw;
+  padding: 10rem 0rem;
+  position: absolute;
+  background-color: white;
+  top: 0rem;
+  right: -60rem;
+  z-index: 10;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  .omnifood-logo {
+    margin: 10rem 0 8rem 0;
+    height: 5rem;
+  }
+  .hide2:link,
+  .hide2:visited {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: 440;
+    margin: 0;
+  }
+  .hide2:hover,
+  .hide2:active {
+    color: #ff7700;
+    transition: all 0.2s linear;
+  }
+  .btn-nav:link,
+  .btn-nav:visited {
+    display: inline-block;
+    font-family: "rubik", sans-serif;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .btn-nav:hover {
+    background-color: #cf711f;
+    color: white;
+    transition: all 0.2s linear;
+  }
+}
+.hidden:focus + .menu-section {
+  right: 0;
+  opacity: 1;
+  transition: all 0.3s linear;
 }
 /* ---------------------- */
 /* -FEATURED-IN-SECTION-- */
