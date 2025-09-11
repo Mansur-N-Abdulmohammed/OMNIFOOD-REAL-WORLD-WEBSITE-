@@ -55,6 +55,17 @@ header {
     display: none;
   }
 }
+.hidden {
+  width: 8rem;
+  height: 8rem;
+  border: 0.5rem solid #333;
+  border-radius: 2rem;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+.hidden:hover {
+  background-color: grey;
+}
 
 .omnifood-logo {
   height: 2.2rem;
@@ -193,6 +204,7 @@ header {
   justify-items: center;
   column-gap: 3rem;
   row-gap: 2rem;
+  padding: 0rem 5rem;
 }
 .logos h1 {
   grid-column: 3/4;
@@ -238,7 +250,7 @@ header {
   column-gap: 5rem;
   row-gap: 8rem;
   max-width: 120rem;
-  padding: 4rem 2.4rem;
+  padding: 4rem 5rem;
 }
 .Z-pattern .header {
   grid-column: 1/3;
@@ -347,9 +359,9 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
-  column-gap: 5.7rem;
-  max-width: 100rem;
-  padding: 5rem 0;
+  column-gap: 5.2rem;
+  max-width: 120rem;
+  padding: 0rem 5rem;
 }
 .meals .meals-header {
   grid-column: 1/-1;
@@ -477,7 +489,7 @@ header {
 .meals .recipes:link,
 .meals .recipes,
 :visited {
-  margin-top: 4.4rem;
+  margin-top: 7rem;
   margin-left: 4rem;
   font-size: 1.9rem;
   font-weight: 400;
@@ -489,6 +501,7 @@ header {
   align-self: center;
   justify-self: center;
   text-transform: capitalize;
+  grid-column: 1/-1;
   ion-icon {
     fill: #cf711f;
     width: 34px;
@@ -523,12 +536,12 @@ header {
 .b-img .texts {
   position: absolute;
   top: 30%;
-  left: 2%;
+  left: 0%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 80%;
+  padding: 0 2rem 0 5rem;
 }
 .b-img .texts h1 {
   font-size: 4.4rem;
@@ -557,7 +570,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 3rem;
+  padding: 5rem;
 }
 .testimonial-section .testimonial .figures {
   display: grid;
@@ -631,7 +644,7 @@ header {
   display: grid;
   max-width: 120rem;
   margin: 5rem auto;
-  padding: 4rem 2.4rem;
+  padding: 4rem 5rem;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 6rem;
   grid-template-rows: auto 1fr auto auto;
@@ -685,8 +698,8 @@ header {
       font-weight: 400;
       ion-icon {
         color: #e67e22;
-        width: 30px;
-        height: 30px;
+        width: 3rem;
+        height: 3rem;
       }
     }
   }
@@ -789,9 +802,9 @@ header {
   }
   ion-icon {
     background-color: #fdf2e9;
-    --ion-size: 30px;
+    --ion-size: 3rem;
     color: #e67e22;
-    padding: 15px;
+    padding: 1.5rem;
     border-radius: 50%;
     margin-bottom: 3.6rem;
     width: var(--ion-size);
@@ -812,6 +825,7 @@ header {
   border-radius: 1.6rem;
   color: #2e1907;
   overflow: hidden;
+
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 15%);
 }
 .free-trial .image-2 {
@@ -827,7 +841,7 @@ header {
   padding: 4.8rem;
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: 3.6rem;
 }
 
 .free-trial .form-section .form {
@@ -904,13 +918,13 @@ header {
 .free-trial .form-section .header-4 {
   display: flex;
   flex-direction: column;
-  gap: 0rem;
+  gap: 1.3rem;
   color: #2e1907e1;
   h1 {
     font-size: 3.2rem;
-    font-weight: 750;
-    line-height: 1.6;
-    letter-spacing: 1px;
+    font-weight: 850;
+    line-height: 1.5;
+    text-transform: uppercase;
   }
   p {
     font-size: 1.4rem;
@@ -930,6 +944,7 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
   gap: 4.6rem;
+  padding: 0rem 5rem;
 }
 
 .foot-916 ul {
@@ -951,8 +966,8 @@ header {
 }
 
 .A789 {
-  width: 35px;
-  height: 35px;
+  width: 3.5rem;
+  height: 3.5rem;
   fill: rgba(0, 0, 0, 0.66) !important;
 }
 .A789:hover,
