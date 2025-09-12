@@ -14,37 +14,16 @@ html {
   font-size: 62.5%;
 }
 
-@property --angle {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: 0deg;
-}
-@keyframes ani {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
+.container-x {
+  background-color: aqua;
+  padding: 10rem 0;
 
-.card {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 8rem;
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-stroke-color: transparent;
-
-  animation: ani 2s linear infinite;
-  background-image: conic-gradient(
-    from var(--angle),
-    #ff00ae,
-    #ff0066,
-    #ff00ae,
-    #00fbff,
-    #ff00ae
-  );
+}
+.box {
+  background-color: purple;
+  margin: 0rem 3rem;
+  padding: 3rem;
+  max-width: 90rem;
 }

@@ -268,7 +268,7 @@ header {
 /* ---------------------- */
 .Z-pattern {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
   column-gap: 5rem;
   row-gap: 8rem;
