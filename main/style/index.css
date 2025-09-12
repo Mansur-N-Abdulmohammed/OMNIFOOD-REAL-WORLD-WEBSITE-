@@ -9,7 +9,7 @@ body {
 header {
   width: 100%;
   height: 9.6rem;
-  position: sticky;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1115,35 +1115,67 @@ header {
     transform: translateX(0rem);
   }
 }
-.manual-navigation .omnifood-logo {
-  height: 5rem;
-  margin-bottom: 4rem;
-  opacity: 0;
-  animation: listing 2s ease-in-out forwards;
-}
-.manual-navigation-list .mew3 {
-  font-size: 2.4rem;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  transition: all 0.2s linear;
-}
-.manual-navigation-list .mew3:hover,
-.manual-navigation-list .mew3:active {
-  text-shadow: 0 0 1rem white;
-}
-.nav-open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-}
-.nav-close {
-  /* animation: hidding 0.3s linear forwards; */
 
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.menu-section {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: rgb(222, 204, 113);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.6rem;
+  transition: all 0.3s;
 }
+
+.menu-section .list-item {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+.menu-section .list-item:hover {
+  translate: 20%;
+}
+
+.nav-open {
+  .m-o {
+    display: none;
+  }
+  .m-c {
+    display: block;
+  }
+  .menu-section {
+    animation: menu-opening 0.4s linear forwards;
+  }
+}
+@keyframes menu-opening {
+  to {
+    right: 0%;
+  }
+}
+@keyframes menu-closing {
+  to {
+    right: -100%;
+  }
+}
+
+.nav-close {
+  .m-o {
+    display: block;
+  }
+  .m-c {
+    display: none;
+  }
+  .menu-section {
+    animation: menu-closing 0.4s linear forwards;
+  }
+}
+
 /* @keyframes hidding {
   to {
     opacity: 0 !important;
