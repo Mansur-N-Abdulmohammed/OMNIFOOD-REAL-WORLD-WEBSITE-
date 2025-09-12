@@ -68,19 +68,24 @@ header {
     height: 100%;
     color: #cf711f;
   }
-  .menu-close {
+  .m-c {
     display: none;
   }
 }
-.hidden:hover {
-  transition: all 0.3s ease-in-out;
-}
-.hidden:focus {
-  .menu-close {
+.menu-close {
+  .m-o {
+    display: none;
+  }
+  .m-c {
     display: block;
   }
-  .menu-open {
+}
+.menu-open {
+  .m-c {
     display: none;
+  }
+  .m-o {
+    display: block;
   }
 }
 
@@ -1038,37 +1043,114 @@ header {
 /* --MANUAL-NAVIGATION-- */
 /* --------------------- */
 .manual-navigation {
-  background-color: rgba(255, 174, 0, 0.896);
+  background-color: #ffcb5a;
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 25;
-  top: 0;
-  left: 0;
-  translate: 120%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  z-index: 250;
+  top: 50%;
+  right: -100%;
+  translate: 0% -50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  animation: ani 0.5s linear forwards;
+}
+@keyframes ani {
+  0% {
+    right: -10%;
+  }
+  50% {
+    right: 50%;
+    translate: 50% -50%;
+    width: 100%;
+    height: 100vh;
+    transform: scale(1);
+    border-radius: 0;
+  }
+  100% {
+    right: 50%;
+    translate: 50% -50%;
+    width: 100%;
+    height: 100vh;
+    transform: scale(1);
+    border-radius: 0;
+  }
+}
+.manual-navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4.4rem;
+  opacity: 0;
+  animation: listing 1s linear forwards;
+  .mew3 {
+    transform: translateX(100rem);
+  }
+}
+.manual-navigation-list .x2 {
+  animation: moving 0.6s linear forwards;
+}
+.manual-navigation-list .x3 {
+  animation: moving 0.7s linear forwards;
+}
+.manual-navigation-list .x4 {
+  animation: moving 0.8s linear forwards;
+}
+.manual-navigation-list .x5 {
+  animation: moving 0.9s linear forwards;
+}
+.manual-navigation-list .x6 {
+  animation: moving 1s linear forwards;
+}
+@keyframes listing {
+  to {
+    opacity: 10;
+  }
+}
+@keyframes moving {
+  to {
+    transform: translateX(0rem);
+  }
 }
 .manual-navigation .omnifood-logo {
   height: 5rem;
   margin-bottom: 4rem;
+  opacity: 0;
+  animation: listing 2s ease-in-out forwards;
 }
-.manual-navigation .mew3 {
+.manual-navigation-list .mew3 {
   font-size: 2.4rem;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   transition: all 0.2s linear;
 }
-.manual-navigation .mew3:hover,
-.manual-navigation .mew3:active {
-  transform: translateX(4rem);
+.manual-navigation-list .mew3:hover,
+.manual-navigation-list .mew3:active {
   text-shadow: 0 0 1rem white;
 }
+.nav-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.nav-close {
+  /* animation: hidding 0.3s linear forwards; */
 
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+/* @keyframes hidding {
+  to {
+    opacity: 0 !important;
+    pointer-events: none;
+  }
+} */
 /* body::-webkit-scrollbar-thumb {
   background-color: red;
 }

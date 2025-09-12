@@ -139,4 +139,11 @@
  / 2 / 4 / 2 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 
+
+ steps to hide something in the web 
+
+
+ 1- opacity >>> 0 
+ 2 pointer-event >>> none
+ 3 visibility >>> hidden
 */
