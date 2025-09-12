@@ -5,6 +5,9 @@
   .omnifood-logo {
     height: 3rem;
   }
+  /* .manual-navigation {
+    display: flex;
+  } */
   .hidden {
     display: inline-block !important;
   }
@@ -48,7 +51,7 @@
     }
   }
   .free-trial {
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 7fr 5fr;
   }
   .form-section {
     padding: 4.8rem;
@@ -86,7 +89,6 @@
   .logos a img {
     height: 2.4rem;
   }
-
   html {
     font-size: 37.5%;
   }
