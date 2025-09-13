@@ -972,6 +972,7 @@ header {
 .foot-916 ul {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 2.4rem;
   .socials {
     display: flex;
@@ -1124,12 +1125,12 @@ header {
   right: -100%;
   background-color: rgb(222, 204, 113);
   z-index: 1;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4.6rem;
-  transition: all 0.3s;
+  /* animation: menu-opening 0.4s ease-in forwards; */
 }
 
 .menu-section .list-item {
@@ -1142,6 +1143,13 @@ header {
   translate: 20%;
 }
 
+@keyframes menu-opening {
+  to {
+    right: 0%;
+  }
+}
+
+/* 
 .nav-open {
   .m-o {
     display: none;
@@ -1174,7 +1182,7 @@ header {
   .menu-section {
     animation: menu-closing 0.4s linear forwards;
   }
-}
+} */
 
 /* @keyframes hidding {
   to {
