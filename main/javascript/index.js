@@ -1,10 +1,21 @@
-var a = "Hacked";
-var b = "Fuck All Of You";
+////////////////////////////////////////////////////////////////
+// the date of creating of the wbesite
+const date = document.querySelector(".date-of-the-day");
+date.textContent = new Date().getFullYear();
 
+////////////////////////////////////////////////////////////////
+// Navigation Arrangement
 var btn = document.querySelector(".hidden");
-var menu = document.querySelector(".menu-section");
+var headerEL = document.querySelector(".header");
+// var menuEl = document.querySelector(".menu-section");
+// const item = document.querySelector(".list-item");
 
-console.log(btn);
 btn.addEventListener("click", function () {
-  menu.style.animation = "menu-opening 0.4s ease-in forwards";
+  headerEL.classList.toggle("nav-open");
+
+  if ('headerEL.classList.toggle("nav-open")' == false) {
+    console.log("it is opening");
+  } else {
+    console.log("it is closing");
+  }
 });

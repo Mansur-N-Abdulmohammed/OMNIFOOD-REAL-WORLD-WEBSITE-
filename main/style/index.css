@@ -1122,15 +1122,23 @@ header {
   height: 100vh;
   position: absolute;
   top: 0;
-  right: -100%;
-  background-color: rgb(222, 204, 113);
+  right: -130%;
+  background-color: rgb(249, 170, 79);
   z-index: 1;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4.6rem;
-  /* animation: menu-opening 0.4s ease-in forwards; */
+  transition: 0.2s linear;
+}
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .menu-section .list-item {
@@ -1143,13 +1151,6 @@ header {
   translate: 20%;
 }
 
-@keyframes menu-opening {
-  to {
-    right: 0%;
-  }
-}
-
-/* 
 .nav-open {
   .m-o {
     display: none;
@@ -1158,31 +1159,10 @@ header {
     display: block;
   }
   .menu-section {
-    animation: menu-opening 0.4s linear forwards;
+    right: 0;
+    animation: flash linear 0.7s forwards;
   }
 }
-@keyframes menu-opening {
-  to {
-    right: 0%;
-  }
-}
-@keyframes menu-closing {
-  to {
-    right: -100%;
-  }
-}
-
-.nav-close {
-  .m-o {
-    display: block;
-  }
-  .m-c {
-    display: none;
-  }
-  .menu-section {
-    animation: menu-closing 0.4s linear forwards;
-  }
-} */
 
 /* @keyframes hidding {
   to {
