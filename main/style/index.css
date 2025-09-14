@@ -10,6 +10,7 @@ header {
   width: 100%;
   height: 9.6rem;
   position: relative;
+  z-index: 888;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -56,6 +57,11 @@ header {
   }
 }
 
+.start-stick {
+  background-color: white !important;
+  position: fixed !important;
+}
+
 .hidden {
   width: 7rem;
   height: 7rem;
@@ -63,6 +69,7 @@ header {
   background-color: transparent;
   border: none;
   z-index: 99;
+  transition: all 0.2s;
   .menu-item {
     width: 100%;
     height: 100%;
@@ -71,6 +78,10 @@ header {
   .m-c {
     display: none;
   }
+}
+.hidden:hover,
+.hidden:active {
+  background-color: #ff550049;
 }
 .menu-close {
   .m-o {
@@ -553,7 +564,7 @@ header {
       rgba(0, 0, 0, 0.627),
       rgba(255, 255, 255, 0)
     ),
-    url(../media/img/meals/pexels-narda-yescas-724842-1566837.jpg);
+    url(../media/img/meals/pexels-narda-yescas-724842-1566837.webp);
   background-size: cover;
   background-position: top center;
 }
@@ -600,7 +611,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 3rem;
+  row-gap: 10rem;
   column-gap: 5rem;
 
   figure {
@@ -1123,7 +1134,7 @@ header {
   position: absolute;
   top: 0;
   right: -130%;
-  background-color: rgb(249, 170, 79);
+  background-color: #fff;
   z-index: 1;
   display: none;
   flex-direction: column;
@@ -1142,13 +1153,13 @@ header {
 }
 
 .menu-section .list-item {
-  color: white;
+  color: orange;
   font-size: 3rem;
   font-weight: 800;
   transition: all 0.3s;
 }
 .menu-section .list-item:hover {
-  translate: 20%;
+  translate: 40%;
 }
 
 .nav-open {

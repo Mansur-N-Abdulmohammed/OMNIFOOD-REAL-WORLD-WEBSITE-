@@ -32,6 +32,10 @@ text-center {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 .container {
   max-width: 130rem;
